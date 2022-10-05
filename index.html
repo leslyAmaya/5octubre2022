@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>landing page</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" type="image/x-icon" href="img/Purin 2.png">
+  </head>
+  <body>
+   <!--barra de navegacion-->
+   <nav>
+     <!--contenedor de logo-->
+     <div class="logo">
+       <a href="#">SANRIO</a>
+     </div>
+     <!--menu web-->
+     <div>
+       <ul clas="nav-links">
+         <li><a href="#">home</a></li>
+         <li><a href="#">quien soy</a></li>
+         <li><a href="#">portafolio</a></li>
+         <li><a href="#">contacto</a></li>
+       </ul>
+     </div>
+   </nav>
+
+   <section class="home"> </section>
+   <div class="text">
+     <p><h2>Sobre mi</h2>
+       <p>Lesly Dayanna Amaya Cuadros, nacida en Bucaramanga, Colombia el dia 8 de enero del 2002, soy estudiante de diseño Grafico en la Universidad de Investigacion y Desarrollo (UDI). me gusta la ilustracion y la animacion </p>
+   </div>
+   <!--AREA DE JAVA-->
+   <script>
+
+     let nav = document.querySelector("nav");
+     window.onscroll = function() {
+       if(document.documentElement.scrollTop > 20){
+         nav.classList.add("sticky");
+       }else {
+         nav.classList.remove("sticky");
+       }
+     }
+
+   </script>
+  </body>
+</html>
